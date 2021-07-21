@@ -365,6 +365,8 @@ int main(int argc, char** argv){
 Imagem gerada pelo programa _motiondetector.cpp_: 
 <br>![Image](imagens/motiondetector.gif)
 
+Podemos perceber que, o terminal alarma um flag quando detecta o movimento da mão em frente à câmera.
+
 Abaixo temos o código do algoritmo _motiondetector.cpp_.
 ```c++
 #include <iostream>
@@ -627,6 +629,8 @@ Imagem normal, que será utilizada para fazer as comparações
 Imagem gerada a partir do algoritmo _tiltshift.cpp_ com  a regulagem para melhorar a nitidez na parte dos botões do contra-baixo:
 <br>![Image](imagens/tiltshift-regulado.png)
 
+Podemos perceber, que os controles foram regulados para dar uma maior ênfase nos botões de volume e e regulagem do contra-baixo.
+
 Abaixo temos o código do algoritmo _tiltshift.cpp_.
 ```c++
 #include <iostream>
@@ -737,6 +741,8 @@ Vídeo de referência, sem o efeito tiltshift:
 
 Imagem gerada pelo programa _tiltshiftvideo.cpp_:
 <br>![Image](imagens/saida.gif)
+
+Podemos perceber, nas margens superior e inferior do vídeo, a diferença causada pelo algoritmo _tiltshiftvideo.cpp_, que embaça essa parte do vídeo.
 
 Abaixo temos o código do algoritmo _tiltshiftvideo.cpp_.
 ```c++
@@ -1042,7 +1048,7 @@ O efeito é obtido avaliando e tratando os componentes básicos da geração de 
 **Descreva no seu relatório detalhes do procedimento usado para criar sua técnica pontilhista.**
 
 Esta é a imagem normal, utilizada para fazer a compração:
-<br>![Image](imagens/velho2.jpg)
+<br>![Image](imagens/velho2.jpeg)
 
 Imagem com o algoritmo _canny.cpp_ aplicado:
 <br>![Image](imagens/cannyborders.png)
