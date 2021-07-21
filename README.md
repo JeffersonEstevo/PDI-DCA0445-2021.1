@@ -10,7 +10,8 @@
 
 Para fazer a implementação irei utilizar a imagem _"biel.png"_: ![Image](imagens/biel.png)
 
-Resultado da saída do programa: ![Image](imagens/negativo.png)
+Resultado da saída do programa: 
+![Image](imagens/negativo.png)
 
 Abaixo temos o código que faz a conversão da região passada, em negativo.
 ```c++
@@ -84,7 +85,8 @@ int main(int, char**){
 
 O progrma também foi implementado utilizando a imagem _"biel.png"_ como referência.
 
-Resultado da saída do programa: ![Image](imagens/negativo.png)
+Resultado da saída do programa: 
+![Image](imagens/negativo.png)
 
 Abaixo temos o código que faz a troca das regiões dos 4 quadrantes.
 ```c++
@@ -144,15 +146,20 @@ int main(int, char **){
 
 **Aprimore o algoritmo de contagem apresentado para identificar regiões com ou sem buracos internos que existam na cena. Assuma que objetos com mais de um buraco podem existir. Inclua suporte no seu algoritmo para não contar bolhas que tocam as bordas da imagem. Não se pode presumir, a priori, que elas tenham buracos ou não.**
 
-Para fazer a implementação irei utilizar a imagem _"bolhas.png"_: ![Image](imagens/bolhas.png)
+Para fazer a implementação irei utilizar a imagem _"bolhas.png"_: 
+![Image](imagens/bolhas.png)
 
-Imagem com bordas removidas: ![Image](imagens/labeling-bordas.png)
+Imagem com bordas removidas: 
+![Image](imagens/labeling-bordas.png)
 
-Imagem da contagem das bolhas feitas, alterando o tom de cinza para visualização: ![Image](imagens/labeling-final.png)
+Imagem da contagem das bolhas feitas, alterando o tom de cinza para visualização: 
+![Image](imagens/labeling-final.png)
 
-Imagem das bolhas que não possuem bohas internas: ![Image](imagens/labeling-com-bolhas.png)
+Imagem das bolhas que não possuem bohas internas: 
+![Image](imagens/labeling-com-bolhas.png)
 
-Resultado da saída do programa: ![Image](imagens/terminal-contagem-bolhas.png)
+Resultado da saída do programa: 
+![Image](imagens/terminal-contagem-bolhas.png)
 
 Abaixo temos o código que faz a contagem de bolhas.
 ```c++
@@ -255,12 +262,14 @@ int main(int argc, char ** argv) {
 
 **Utilizando o programa exemplos/histogram.cpp como referência, implemente um programa motiondetector.cpp. Este deverá continuamente calcular o histograma da imagem (apenas uma componente de cor é suficiente) e compará-lo com o último histograma calculado. Quando a diferença entre estes ultrapassar um limiar pré-estabelecido, ative um alarme. Utilize uma função de comparação que julgar conveniente.**
 
-Imagem normal, gerada apenas mostrando seu histograma ![Image](imagens/histogram.png)
+Imagem normal, gerada apenas mostrando seu histograma 
+![Image](imagens/histogram.png)
 
-Imagem equalizada gerada com o algoritmo _equalize.cpp_: ![Image](imagens/equalize.png)
+Imagem equalizada gerada com o algoritmo _equalize.cpp_: 
+![Image](imagens/equalize.png)
 
 Abaixo temos o código do algoritmo _equalize.cpp_.
-```
+```c++
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
@@ -352,14 +361,14 @@ int main(int argc, char** argv){
 }
 ```
 
-Imagem gerada pelo programa _motiondetector.cpp_: ![Image](imagens/motiondetector.gif)
+Imagem gerada pelo programa _motiondetector.cpp_: 
+![Image](imagens/motiondetector.gif)
 
 Abaixo temos o código do algoritmo _motiondetector.cpp_.
-```
+```c++
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include <opencv2/imgproc/types_c.h> // Para corrigir - -  error: ‘CV_COMP_CORREL’ was not declared in this scope
-
 
 using namespace cv;
 using namespace std;
@@ -457,14 +466,17 @@ int main(int argc, char** argv){
 ```
 **5. Utilizando o programa exemplos/filtroespacial.cpp como referência, implemente um programa laplgauss.cpp. O programa deverá acrescentar mais uma funcionalidade ao exemplo fornecido, permitindo que seja calculado o laplaciano do gaussiano das imagens capturadas. Compare o resultado desse filtro com a simples aplicação do filtro laplaciano.**
 
-Imagem normal, que será utilizada para fazer as comparações ![Image](imagens/normal.png)
+Imagem normal, que será utilizada para fazer as comparações 
+![Image](imagens/normal.png)
 
-Imagem gerada a partir do algoritmo _filtroespacial.cpp_, utilizando o filtro laplaciano: ![Image](imagens/laplaciano.png)
+Imagem gerada a partir do algoritmo _filtroespacial.cpp_, utilizando o filtro laplaciano: 
+![Image](imagens/laplaciano.png)
 
-Imagem gerada a partir do algoritmo _laplgauss.cpp_, juntando os filtros laplaciano e gaussiano: ![Image](imagens/laplaciano-gaussiano.png)
+Imagem gerada a partir do algoritmo _laplgauss.cpp_, juntando os filtros laplaciano e gaussiano: 
+![Image](imagens/laplaciano-gaussiano.png)
 
 Abaixo temos o código do algoritmo _laplgauss.cpp_.
-```
+```c++
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
@@ -608,12 +620,14 @@ int main(int argvc, char** argv){
     
 **Utilizando o programa exemplos/addweighted.cpp como referência, implemente um programa tiltshiftvideo.cpp. Tal programa deverá ser capaz de processar um arquivo de vídeo, produzir o efeito de tilt-shift nos quadros presentes e escrever o resultado em outro arquivo de vídeo. A ideia é criar um efeito de miniaturização de cenas. Descarte quadros em uma taxa que julgar conveniente para evidenciar o efeito de stop motion, comum em vídeos desse tipo.**
 
-Imagem normal, que será utilizada para fazer as comparações ![Image](imagens/tiltshift-normal.png)
+Imagem normal, que será utilizada para fazer as comparações 
+![Image](imagens/tiltshift-normal.png)
 
-Imagem gerada a partir do algoritmo _tiltshift.cpp_ com  a regulagem para melhorar a nitidez na parte dos botões do contra-baixo: ![Image](imagens/tiltshift-regulado.png)
+Imagem gerada a partir do algoritmo _tiltshift.cpp_ com  a regulagem para melhorar a nitidez na parte dos botões do contra-baixo:
+![Image](imagens/tiltshift-regulado.png)
 
 Abaixo temos o código do algoritmo _tiltshift.cpp_.
-```
+```c++
 #include <iostream>
 #include <opencv2/opencv.hpp>
 
@@ -717,12 +731,14 @@ int main(int argvc, char** argv){
 }
 ```
 
-Vídeo de referência, sem o efeito tiltshift: ![Image](imagens/paisagem.gif)
+Vídeo de referência, sem o efeito tiltshift:
+![Image](imagens/paisagem.gif)
 
-Imagem gerada pelo programa _tiltshiftvideo.cpp_: ![Image](imagens/saida.gif)
+Imagem gerada pelo programa _tiltshiftvideo.cpp_:
+![Image](imagens/saida.gif)
 
 Abaixo temos o código do algoritmo _tiltshiftvideo.cpp_.
-```
+```c++
 #include <iostream>
 #include <string>
 
@@ -814,10 +830,11 @@ int main(int argvc, char** argv){
 
 **7. Utilizando o programa exemplos/dft.cpp como referência, implemente o filtro homomórfico para melhorar imagens com iluminação irregular. Crie uma cena mal iluminada e ajuste os parâmetros do filtro homomórfico para corrigir a iluminação da melhor forma possível. Assuma que a imagem fornecida é em tons de cinza.**
 
-Nesta imagem, podemos ver claramente a comparação entre a imagem original (sem iluminação) e a imagem como o filtro homomórfico aplicado: ![Image](imagens/filtrohomomorfico.png)
+Nesta imagem, podemos ver claramente a comparação entre a imagem original (sem iluminação) e a imagem como o filtro homomórfico aplicado:
+![Image](imagens/filtrohomomorfico.png)
 
 Abaixo temos o código do algoritmo _filtrohomomorfico.cpp_.
-```
+```c++
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
@@ -1023,16 +1040,20 @@ O efeito é obtido avaliando e tratando os componentes básicos da geração de 
 **Escolha uma imagem de seu gosto e aplique a técnica que você desenvolveu.**
 **Descreva no seu relatório detalhes do procedimento usado para criar sua técnica pontilhista.**
 
-Esta é a imagem normal, utilizada para fazer a compração: ![Image](imagens/velho2.jpg)
+Esta é a imagem normal, utilizada para fazer a compração:
+![Image](imagens/velho2.jpg)
 
-Imagem com o algoritmo _canny.cpp_ aplicado: ![Image](imagens/cannyborders.png)
+Imagem com o algoritmo _canny.cpp_ aplicado:
+![Image](imagens/cannyborders.png)
 
-Imagem com o algoritmo _pontilhismo.cpp_ aplicado: ![Image](imagens/pontos.jpg)
+Imagem com o algoritmo _pontilhismo.cpp_ aplicado:
+![Image](imagens/pontos.jpg)
 
-Imagem com o algoritmo _nova.cpp_, feito pela combinação de _canny_ e _pontilhismo_: ![Image](imagens/pontos_nova.jpg)
+Imagem com o algoritmo _nova.cpp_, feito pela combinação de _canny_ e _pontilhismo_: 
+![Image](imagens/pontos_nova.jpg)
 
 Abaixo temos o código do algoritmo _nova.cpp_.
-```
+```c++
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include <fstream>
@@ -1144,14 +1165,16 @@ int main(int argc, char** argv){
 ```
 **9. Utilizando o programa kmeans.cpp como exemplo prepare um programa exemplo onde a execução do código se dê usando o parâmetro nRodadas=1 e inciar os centros de forma aleatória usando o parâmetro KMEANS_RANDOM_CENTERS ao invés de KMEANS_PP_CENTERS. Realize 10 rodadas diferentes do algoritmo e compare as imagens produzidas. Explique porque elas podem diferir tanto.**
 	
-Esta é a imagem normal, utilizada para fazer a compração: ![Image](imagens/sushi.jpg)
+Esta é a imagem normal, utilizada para fazer a compração: 
+![Image](imagens/sushi.jpg)
 
-Imagem de saída com o programa _kmeans.cpp_ executado: ![Image](imagens/sushi-kmeans.jpg)
+Imagem de saída com o programa _kmeans.cpp_ executado:
+![Image](imagens/sushi-kmeans.jpg)
 
 O algoritmo _kmeans_ aglorema as saídas, quando a gente vai rodando o código. O algoritmo pode diferir muito, porque em cada execução o programa pode considerar uma grande região para ser mapeada, ou não.
 
 Abaixo temos o código do algoritmo _kmeans.cpp_.
-```
+```c++
 #include <opencv2/opencv.hpp>
 #include <cstdlib>
 
